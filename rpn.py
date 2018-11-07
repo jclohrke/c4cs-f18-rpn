@@ -15,13 +15,17 @@ def calculate(arg):
 		except ValueError:
 			val1 = stack.pop()
 			val2 = stack.pop()
-			result = val1 + val2
+			if token == '+':
+				result = val1 + val2
+			elif token == '-':
+				result = val1 - val2
+
 			stack.append(result)
 			return stack[0]
 
 def main():
 	while True:
-		result = calculate(input('rpn calc>')))
+		result = calculate(input('rpn calc>'))
 		print(result)		
 
 if __name__ == '__main__':
