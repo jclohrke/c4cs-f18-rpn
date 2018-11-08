@@ -1,6 +1,4 @@
 --- 
-cache: pip
-install: "-pip install -r requirements.txt"
 language: python
 python: 
   - "3.4.3"
