@@ -22,6 +22,12 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate('1 1 + 2 *')
 		self.assertEqual(4, result)
 
+	def test_expo(self):
+		result = rpn.calculate('2 5 ^')
+		self.assertEqual(32, result)
+		result = rpn.calculate('3 3 ^')
+		self.assertEqual(27, result)
+
 
 
 
